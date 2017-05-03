@@ -18,6 +18,7 @@ VCC -> 3.3/5V
 GND -> GND
 
 SPI Mode:
+
 // If using software SPI (the default case):
 
 #define OLED_MOSI   9
