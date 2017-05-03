@@ -184,20 +184,20 @@ void ArducamSSD1306::begin(uint8_t vccstate, uint8_t i2caddr, bool reset) {
   if (sid != -1){
     pinMode(dc, OUTPUT);
     pinMode(cs, OUTPUT);
-//commented for ESP8266 compatibility
-//    csport      = portOutputRegister(digitalPinToPort(cs));
-//    cspinmask   = digitalPinToBitMask(cs);
-//    dcport      = portOutputRegister(digitalPinToPort(dc));
-//    dcpinmask   = digitalPinToBitMask(dc);
+
+    csport      = portOutputRegister(digitalPinToPort(cs));
+    cspinmask   = digitalPinToBitMask(cs);
+    dcport      = portOutputRegister(digitalPinToPort(dc));
+    dcpinmask   = digitalPinToBitMask(dc);
     if (!hwSPI){
       // set pins for software-SPI
       pinMode(sid, OUTPUT);
       pinMode(sclk, OUTPUT);
-//commented for ESP8266 compatibility
-//      clkport     = portOutputRegister(digitalPinToPort(sclk));
-//      clkpinmask  = digitalPinToBitMask(sclk);
-//      mosiport    = portOutputRegister(digitalPinToPort(sid));
-//      mosipinmask = digitalPinToBitMask(sid);
+
+      clkport     = portOutputRegister(digitalPinToPort(sclk));
+      clkpinmask  = digitalPinToBitMask(sclk);
+      mosiport    = portOutputRegister(digitalPinToPort(sid));
+      mosipinmask = digitalPinToBitMask(sid);
       }
     if (hwSPI){
       SPI.begin ();
