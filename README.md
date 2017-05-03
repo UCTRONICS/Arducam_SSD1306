@@ -2,9 +2,9 @@
 
 I2C Mode:
 
-R1,R4,R6,R7:4.7K
+R1,R4,R6,R7: 4.7K
 
-R8, 0K
+R8: 0K
 
 
 D0 -> SCL
