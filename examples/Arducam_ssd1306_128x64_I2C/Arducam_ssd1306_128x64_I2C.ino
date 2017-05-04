@@ -13,16 +13,13 @@ R8, 0K
 
 D0  SCL
 D1  SDA
-RES  3.3/5V
+RES  PIN7
 VCC  3.3/5V
 GND  GND
 */
 
 // Pin definitions
-#define OLED_RESET  16  // Pin 15 -RESET digital signal
-
-#define LOGO16_GLCD_HEIGHT 16
-#define LOGO16_GLCD_WIDTH  16
+#define OLED_RESET  7  // Pin 15 -RESET digital signal
 
 ArducamSSD1306 display(OLED_RESET); // FOR I2C
 
