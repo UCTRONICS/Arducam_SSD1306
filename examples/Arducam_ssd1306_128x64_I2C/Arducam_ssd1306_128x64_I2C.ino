@@ -19,15 +19,15 @@ GND  GND
 */
 
 // Pin definitions
-#define OLED_RESET  7  // Pin 15 -RESET digital signal
+#define OLED_RESET  7  // Pin 7 -RESET digital signal
 
 ArducamSSD1306 display(OLED_RESET); // FOR I2C
 
 
 void setup(void)
 {
-	// Start Serial
-	Serial.begin(115200);
+// Start Serial
+Serial.begin(115200);
 
   // SSD1306 Init
   display.begin();  // Switch OLED
