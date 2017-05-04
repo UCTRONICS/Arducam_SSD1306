@@ -11,7 +11,7 @@ D0 -> SCL
 
 D1 -> SDA
 
-RES -> 3.3/5V
+RES -> PIN7
 
 VCC -> 3.3/5V
 
