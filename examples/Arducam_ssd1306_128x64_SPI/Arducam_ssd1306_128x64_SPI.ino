@@ -39,11 +39,14 @@ void setup()   {
   // by default, we'll generate the high voltage from the 3.3v line internally! (neat!)
   display.begin(SSD1306_SWITCHCAPVCC);
   
-   display.clearDisplay();
+  display.clearDisplay();
   display.setTextSize(1);
-  display.setTextColor(WHITE);
-  display.setCursor(5,20);
+  display.setCursor(20,2);
+  display.println("0.96 OLED 128X64");
+  display.setCursor(20,25);
   display.println("Hello, Arducam!");
+  display.setCursor(10,45);
+  display.println("support@arducam.com");
   display.display();
 }
 

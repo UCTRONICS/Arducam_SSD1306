@@ -35,8 +35,12 @@ Serial.begin(115200);
   display.clearDisplay();
   display.setTextSize(1);
   display.setTextColor(WHITE);
-  display.setCursor(5,20);
+    display.setCursor(20,2);
+  display.println("0.96 OLED 128X64");
+  display.setCursor(20,25);
   display.println("Hello, Arducam!");
+   display.setCursor(10,45);
+  display.println("support@arducam.com");
   display.display();
 
 
